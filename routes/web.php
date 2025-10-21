@@ -8,6 +8,7 @@ Route::get('/', function () {
 Route::get('/', function() {
     return view('navbar');
 });
+
 Route::get('/registration', [App\Http\Controllers\appuser::class, 'registration'])->name('registration');
 Route::get('/welcome', [App\Http\Controllers\appuser::class, 'Welcome'])->name('Welcome');
 Route::post('/login', [App\Http\Controllers\appuser::class, 'login'])->name('login');

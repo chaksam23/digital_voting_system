@@ -62,8 +62,9 @@ class appuser extends Controller
         return redirect('create')->with('message', "Voter Added Successfully");
 }
     public function View(){
-        $voters = Voter::all();
-        return view('view', compact('voters'));
+        $voter_id = Voter::all(); // get all data from the database
+        $title = 'View Page';
+        return view('view',compact('title', 'voter_id'));
     }
 }
    

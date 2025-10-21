@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-12"> -->
                     <div class="navbar p-">
-                        <a href="/">Home</a>
+                        <a href="">Home</a>
                         <a href="/">About us</a>
                         <a href="/">Gallery</a>
                         <a href="{{route('create')}}">Create</a>
