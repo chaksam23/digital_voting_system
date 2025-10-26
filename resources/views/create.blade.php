@@ -26,30 +26,30 @@
                             <h6>Fill Voter's Records</h6><hr>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Name <sup style="color: red;">*</sup></label>
-                                <input type="text" name="vname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name" required>
+                                <input type="text" name="vname" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Father's Name <sup style="color: red;">*</sup></label>
-                                <input type="text" name="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Mobile" required>
+                                <input type="text" name="fname" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Enter Your Mobile" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Voter Id <sup style="color: red;">*</sup></label>
-                                <input type="text" name="voter_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+                                <input type="text" name="voter_id" class="form-control" id="vid" aria-describedby="emailHelp" placeholder="Enter Voter Id" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Phone no <sup style="color: red;">*</sup></label>
-                                <input type="tel" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Father's Name" required>
+                                <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter Your Phone no" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Address <sup style="color: red;">*</sup></label>
-                                <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Father's Name" required>
+                                <input type="text" name="address" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter Your Address" required>
                             </div>
 
 
                             <div class="row">
                                 <div class="col-12">
                                     <div style="display: block; float: right;">
-                                        <button type="submit" name="ok" class="btn btn-primary">Submit</button>
+                                        <button type="submit" name="ok" onclick="return validateForm()" class="btn btn-primary">Submit</button>
                                     </div>
                                 </div>
                             </div>
@@ -59,6 +59,9 @@
             </div>
         </div>
     </section>
+@section('script')
+
+@endsection
     
 </body>
 </html>

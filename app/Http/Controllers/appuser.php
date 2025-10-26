@@ -6,6 +6,7 @@ use App\Models\register as user;
 use Illuminate\Http\Request;
 use Illuminate\Http\Models\admin;
 
+
 class appuser extends Controller
 {
     public function registration(){
@@ -66,6 +67,17 @@ class appuser extends Controller
         $title = 'View Page';
         return view('view',compact('title', 'voter_id'));
     }
+    public function Delete($id){
+        $voter = Voter::find($id);
+        $title = 'View Page';
+        $voter->delete();
+        return redirect('view')->with('message', "Voter Deleted Successfully");
+}
+    public function Edit($id){
+        $voter = Voter::find($id);
+        $title = 'Edit Page';
+        return view('edit', compact('title', 'voter'));
+}
 }
    
 

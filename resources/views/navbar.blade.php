@@ -8,42 +8,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
-    /* *
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    } */
-    .navbar{
-        width: 100%;
-        height: 30px;
-        background-color: #333;
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-        display: flex;
-        flex-direction:row;
-        
-        
+    .top-bar {
+        background-color:red;
     }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    
 </style>
 <body>
-    <!-- <section> -->
-        <!-- <div class="container-fluid">
+    <section>
+        <div class="container-fluid top-bar">
             <div class="row">
-                <div class="col-12"> -->
-                    <div class="navbar p-">
+                <div class="col-md-3 col-sm-12"> 
+                    <div class="navbar">
                         <a href="">Home</a>
                         <a href="/">About us</a>
                         <a href="/">Gallery</a>
                         <a href="{{route('create')}}">Create</a>
                         <a href="{{route('view')}}">View</a>
-                        <a href="/">Home</a></li>
                     </div>
-                <!-- </div>
+                 </div>
             </div>
-        </div> -->
-    <!-- </section> -->
-    
+        </div> 
+     </section>
+    <section>
+        @yield('content')
+    </section>
+    <script src="js/custom.js"></script>
 </body>
 </html>
