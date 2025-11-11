@@ -43,5 +43,8 @@
                 <button class="btn btn-primary m-3">Submit</button> 
                 
             </form>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
 </body>
 </html>

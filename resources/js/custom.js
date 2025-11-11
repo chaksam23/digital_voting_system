@@ -1,6 +1,5 @@
 function validateForm() {
     let name = document.getElementById("name");
-    let fname = document.getElementById("fname");
     let vid = document.getElementById("vid");
     let phone = document.getElementById("phone");
     let address = document.getElementById("address");

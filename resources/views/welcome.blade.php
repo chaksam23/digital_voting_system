@@ -10,7 +10,9 @@
 <style>
     .text-info{
         height: 100vh;
+       
     }
+    
 </style>
 <body>
     <div class="text-info bg-dark p-2">
